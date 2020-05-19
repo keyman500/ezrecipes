@@ -36,7 +36,7 @@ app.app_context().push()
 db.create_all(app=app)
 ''' End Boilerplate Code '''
 
-@app.route('/')
+@app.route('/',methods=['GET'])
 def index():
 	return render_template('index.html')
 
